@@ -26,7 +26,7 @@ export function Header() {
   });
 
   return (
-    <header className={cn("sticky inset-0 w-full z-50 items-center flex")}>
+    <header className={"sticky inset-0 w-full z-50 items-center flex px-4"}>
       <motion.div
         layout
         variants={headerContentVariants}
@@ -37,7 +37,7 @@ export function Header() {
         }}
         className={cn(
           hasScrolled
-            ? "rounded border bg-background/95 backdrop-blur border-border/20 supports-[backdrop-filter]:bg-background/80"
+            ? "rounded border bg-background/95 backdrop-blur border-border supports-[backdrop-filter]:bg-background/80"
             : "bg-transparent",
           "max-w-screen-xl w-full flex items-center mx-auto px-4 h-20 gap-8"
         )}
